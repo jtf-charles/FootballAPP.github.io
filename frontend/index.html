@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compétitions de Football</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⚽ Compétitions Internationales</h1>
+    <input type="text" id="search-input" placeholder="Rechercher une compétition...">
+  </header>
+
+  <main>
+    <section id="competition-list"></section>
+
+    <section id="standings-section" class="hidden">
+      <div class="standings-header">
+        <h2 id="standings-title"></h2>
+        <select id="season-select"></select>
+        <button id="close-standings">Masquer le classement</button>
+      </div>
+
+      <table id="standings-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Équipe</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Football App - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
